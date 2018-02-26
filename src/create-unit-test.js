@@ -1,6 +1,7 @@
 const fs = require('fs');
 const findInFiles = require('find-in-files');
-const { getPascalCase, getDestinationPath } = require('./helpers')
+const { getPascalCase, getDestinationPath } = require('./helpers');
+const getExportedElements = require('./get-exported-elements');
 const getContent = require('./content/get-content');
 
 function writeHandler(err) {

@@ -8,6 +8,6 @@ Automate the creation of automatable unit tests
 > npm install
 > npm link
 // now from any directory you can type
-> unitTests create path/to/myFile.jsx path/to/__tests__
+> unitTests create path/to/myFile.js path/to/__tests__
 ```
 
