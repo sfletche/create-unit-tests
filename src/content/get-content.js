@@ -14,8 +14,7 @@ function getContent({ pathToFile, pathToUnitTest, fileName, exportedElements }) 
   const relativeLocation = getRelativeLocation(pathToFile, pathToUnitTest);
   return `import ${fileName} from '${relativeLocation}${pathToFileMinusExt}';
 
-describe('${fileName}', () => {
-  ${exportedElements.map(getUnitTest).join('')}
+describe('${fileName}', () => {${exportedElements.map(getUnitTest).join('')}
 });
 `;
 }
